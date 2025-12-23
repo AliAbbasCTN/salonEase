@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Admin | Modern Salon</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-content">
+            <a href="index.html">Home</a>
+            <a href="booking.html">Book Now</a>
+            <a href="login.html">Admin</a>
+        </div>
+    </nav>
+
+    <header class="hero" style="height: 30vh; min-height: 200px;">
+        <h1>Admin Portal</h1>
+        <p>Register new staff or administrative accounts.</p>
+    </header>
+
+    <div class="auth-wrapper" style="margin-top: -80px; position: relative; z-index: 10;">
+        <div class="auth-card">
+            <h2>Create Admin</h2>
+            <p>Set up your administrative access to manage bookings.</p>
+            
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="regUser">Choose Username</label>
+                    <input type="text" id="regUser" placeholder="e.g. admin_pro" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="regPass">Create Password</label>
+                    <input type="password" id="regPass" placeholder="••••••••" required>
+                </div>
+
+                <button type="submit" class="btn-primary">Register Admin</button>
+            </form>
+
+            <div class="auth-footer">
+                Already have an account? <a href="login.html">Login here</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>
